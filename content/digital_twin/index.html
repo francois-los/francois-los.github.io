@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Project - Digital Twin</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper-->
+			<div id="wrapper">
+
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#projects" class="icon solid fa-folder"><span>Projects</span></a>
+						<a href="../../index.html#projects" class="icon solid fa-arrow-right"><span>Return</span></a>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Me -->
+							<article id="projets" class="panel projects digital">
+								<header>
+									<h1 align="center">Digital Twin</h1>
+								</header>
+								
+								<p align="justify">
+									This project was carried out with 3 other students from my school, the goal being to present a digital twin for Urbawood, a partner building at ISEN, located in the Euratechnologie district in Lambersart. We therefore aimed to improve the version of an already existing model, by simplifying its use and general understanding for the user.
+									<br><br>
+									<b>Technologies used : </b>HTML / CSS / JS / Express<br>
+									<b>Library used : </b>ThreeJS / DOMEvents / JQuery / ChartJS / Gltfloader / Orbitcontrols<br>
+
+									<h3>Our 3D vision</h3>
+										<p align="justify">
+										First, we got an already existing version of the 3D representation, but it had several flaws and we wanted to add interactions. For this we used Blender, a 3D modeling software. Some objects had too much detail for the use we want to make, that's when we had them decimated, to reduce their sizes. We were able to reduce the weight of the model by 75%. However, we have improved the aesthetic aspect by applying various textures to the floors and objects, which caused an increase in the weight of the model, which was inevitable.<br>
+
+										After that, we wanted to integrate markers into the module allowing access to information windows about the selected object. These markers in large numbers would have represented an eyesore, so we had the idea to make them transparent in order to alleviate this problem. <br>
+
+										Then we wanted to improve the loading speed of the model in order to optimize it as much as possible. One possibility for rendering was the use of verge3D, which is a real-time rendering engine and toolset for creating interactive 3D experiences that run on websites. In addition to rendering, it allowed us to interact with different objects in the scene through a “puzzle” system which is a simplified and easy-to-use vent system. However that would have made the project less interesting because verge3D takes care of almost everything. So that's also why we decided not to use it in the end.<br><br>
+
+										<h3>Internet of Things</h3>
+										The initial goal was to use some sensor placed in the apartment, to collect information and display it, but our plans have changed. Because of the Covid crisis as well as the containment, we will collect information from open APIs on the web, we will process this information and we will display it in small popup windows when the user clicks on a object.<br>
+
+										The display of data in our pop-ups is based on different APIs. The first API used is OpenWeatherMap to be able to have data concerning the temperature. This API, like most APIs, allows via a request to retrieve the desired data in JSON format. Likewise, for the air quality graph, we used the AirQuality API to obtain the air quality index of a city. <br>
+
+										For the implementation of pop-ups when interacting with different objects, we used jQuery which is a free, cross-platform JavaScript library created to facilitate client-side scripting in the HTML code of web pages. This allowed us to manage the display of pop-ups as well as being able to move them anywhere. However, implementing these graphics in our pop-ups was too much work for the amount of time left on the project. We therefore preferred the use of ChartJs to Kibana. Indeed, ChartsJS allows you to create different types of graphics in HTML. To do this, we just need to create a new Chart object, indicate the type of chart and the data used. ChartJs then takes care of displaying the chart. <br><br><br>
+
+										<h3>Project management</h3>
+										In order to monitor the project over six weeks, we have implemented various tools. First of all, we created a Teams team to share our files and organize meetings three to four times a week. The purpose of these meetings was mainly to discuss personal work, the overall progress of the project and the tasks to be carried out. We might also just get together to work as a group when we had a particular concern. Each weekend we debriefed what we had managed to do and what remained to be worked on with the help of our tutor. <br>
+
+										In addition to these meetings, we also created a Trello to distribute the various tasks to be performed. It also allowed us to design cards containing the instructions to be carried out, these cards can then be moved to a “In progress”, “To do” or “Finished” column. In addition to these tools, we have resorted to the use of a GitHub repository to share 3D modeling files as well as scripts between us. We also designed a Gantt chart to visualize the time allocated to each task over the 5 weeks of the project. This tool allowed us to better analyze the progress of the project and to identify at a glance the progress or delay of certain works. <br>
+
+
+										</p>
+								</p>								
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							<li>&copy; François Losfeld 2020</li><li>Email : francois.losfeld@isen.yncrea.fr</li>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../../assets/js/jquery.min.js"></script>
+			<script src="../../assets/js/browser.min.js"></script>
+			<script src="../../assets/js/breakpoints.min.js"></script>
+			<script src="../../assets/js/util.js"></script>
+			<script src="../../assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -2003,6 +2003,41 @@ input, select, textarea {
 				align-items: center;
 			}
 
+			#main > .panel.projects.soon {
+				padding: 2em;
+				height: 111em;
+				display: -moz-flex;
+				display: -webkit-flex;
+				display: -ms-flex;
+				display: flex;
+				-moz-flex-direction: row;
+				-webkit-flex-direction: row;
+				-ms-flex-direction: row;
+				flex-direction: column;
+				-moz-align-items: center;
+				-webkit-align-items: center;
+				-ms-align-items: center;
+				align-items: center;
+			}
+
+			#main > .panel.projects.digital {
+				padding: 2em;
+				height: 111em;
+				display: -moz-flex;
+				display: -webkit-flex;
+				display: -ms-flex;
+				display: flex;
+				-moz-flex-direction: row;
+				-webkit-flex-direction: row;
+				-ms-flex-direction: row;
+				flex-direction: column;
+				-moz-align-items: center;
+				-webkit-align-items: center;
+				-ms-align-items: center;
+				align-items: center;
+			}
+
+
 				#main > .panel.intro .pic {
 					text-decoration: none;
 					position: relative;
